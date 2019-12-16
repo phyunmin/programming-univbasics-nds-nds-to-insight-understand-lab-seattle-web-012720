@@ -13,7 +13,7 @@ def print_first_directors_movie_titles
 #  pp directors_database
   row_index = 0
   while row_index < directors_database.length do
-    puts "#{directors_database[row_index]}"
+    puts "#{directors_database[row_index][:name]}"
     row_index+=1
   end
 end
