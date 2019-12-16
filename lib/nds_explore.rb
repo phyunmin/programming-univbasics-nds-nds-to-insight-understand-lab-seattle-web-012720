@@ -14,5 +14,15 @@ def print_first_directors_movie_titles
   pp directors_database[0][:name]
   pp directors_database[0][:movies][0][:title]
   
-  
+  row_index = 0
+  while row_index < directors_database.length do
+    if(directors_database[row_index][:name] == "Stephen Spielberg")
+      col_index =0
+      while col_index <pp directors_database[row_index][:movies][col_index].length do
+        puts directors_database[row_index][:movies][col_index][:title]
+        col_index+=1
+      end
+    end
+    row_index+=1
+  end
 end
